@@ -1,0 +1,24 @@
+{
+  "name": "physics-and-math",
+  "version": "0.0.0",
+  "description": "physics-and-math",
+  "main": "color-utils.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidey/physics-and-math.git"
+  },
+  "author": "Davide Petrillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidey/physics-and-math/issues"
+  },
+  "homepage": "https://github.com/davidey/physics-and-math",
+  "devDependencies": {
+      "grunt": "~0.4.1"
+    , "grunt-contrib-jshint": "~0.6.0"
+    , "grunt-contrib-jasmine": "git://github.com/travisjeffery/grunt-contrib-jasmine#9d5874dd592cf41e8268918fe9baeb261afd75b2"
+  }
+}
