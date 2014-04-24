@@ -12,6 +12,30 @@ describe('Vector', function () {
 		});
 	});
 
+	describe('fromDegrees()', function () {
+		it('should return a new vector starting by its degree and magnitude', function () {
+			var vector = Vector.fromDegrees(new DegreeValue(0), 1);
+
+			expect(vector.x).toEqual(1);
+			expect(vector.y).toEqual(0);
+
+			var vector = Vector.fromDegrees(new DegreeValue(90), 1);
+
+			expect(vector.x).toEqual(0);
+			expect(vector.y).toEqual(1);
+
+			var vector = Vector.fromDegrees(new DegreeValue(180), 1);
+
+			expect(vector.x).toEqual(-1);
+			expect(vector.y).toEqual(0);
+
+			var vector = Vector.fromDegrees(new DegreeValue(270), 1);
+
+			expect(vector.x).toEqual(0);
+			expect(vector.y).toEqual(-1);
+		});
+	});
+
 	describe('add()', function () {
 		it('should add the given vector\'s x and y to the own ones', function () {
 			var otherVector = new Vector(1, 1);
